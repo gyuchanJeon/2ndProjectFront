@@ -1,0 +1,75 @@
+img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#message-container {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+}
+
+.message-aside {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-aside-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  & > input {
+    border: none;
+    outline: none;
+  }
+}
+
+.message-frequent {
+  display: flex;
+  flex-direction: column;
+  & > h3 {
+    align-self: start;
+  }
+}
+
+.message-rooms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message-room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-name_preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.message-name {
+  display: flex;
+  justify-content: start;
+}
+
+.message-date_unRead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
