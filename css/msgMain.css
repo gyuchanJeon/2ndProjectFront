@@ -1,0 +1,330 @@
+main {
+  width: 1920px;
+  height: 850px;
+}
+
+#message-container {
+  max-width: 1650px;
+  height: 100%;
+  display: flex;
+  padding: 20px;
+}
+
+.aside {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gainsboro;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-sizing: border-box;
+}
+
+.aside-top {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+  box-sizing: border-box;
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  & > input {
+    border: none;
+    outline: none;
+    &::placeholder {
+      color: gainsboro;
+    }
+  }
+}
+
+.searchImg {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  padding: 5px;
+  width: 100%;
+  padding: 8px;
+  flex-direction: column;
+  box-sizing: border-box;
+  & > h3 {
+    align-self: start;
+  }
+}
+
+.rooms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.room {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 3px;
+  & > img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  &:hover {
+    background-color: rgba(220, 220, 220, 0.534);
+    border-radius: 8px;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+}
+
+.selected {
+  background-color: #7e7edf;
+  border-radius: 8px;
+  color: white;
+  &:hover {
+    background-color: #5d5ddd;
+    cursor: pointer;
+  }
+}
+
+.name_preview {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.name {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  & > img {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+  }
+}
+
+.preview {
+  font-size: 10px;
+}
+
+.date_unRead {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  & > img {
+    align-self: flex-end;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.create {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.create-btn {
+  width: 10em;
+  height: 3em;
+  border: none;
+  border-radius: 10px;
+  background-color: #7e7edf;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  &:hover {
+    background-color: #5d5ddd;
+    cursor: pointer;
+  }
+}
+
+.view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gainsboro;
+  border-left: none !important;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #f9f8f9;
+  box-sizing: border-box;
+}
+
+.others {
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+  box-sizing: border-box;
+}
+
+.messages {
+  padding: 20px 10px;
+}
+
+.profile_name_preview {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  box-sizing: border-box;
+  & > div {
+    margin-left: 10px;
+  }
+}
+
+.search_more {
+  width: 50px;
+  display: flex;
+  margin-right: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-message_profile {
+  display: flex;
+  justify-content: flex-end;
+  & > img {
+    margin-left: 10px;
+  }
+}
+
+.my-messages_readTime {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.my-message {
+  max-width: 650px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #7e7edf;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 1px 2px gainsboro;
+}
+
+.readTime {
+  font-size: 10px;
+  color: rgb(151, 151, 151);
+}
+
+.message-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.others-messages {
+  display: flex;
+  justify-content: flex-start;
+  & > img {
+    margin-right: 10px;
+  }
+}
+
+.others-messages_readTime {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.others-message {
+  max-width: 650px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 8px;
+  color: black;
+  box-shadow: 1px 2px gainsboro;
+}
+
+.send-message {
+  width: 700px;
+  height: 25px;
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 1px 2px gainsboro;
+}
+
+.input_fileIcon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  & > input {
+    outline: none;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+  }
+}
+
+.fileIcon:hover {
+  cursor: pointer;
+}
+
+.send-btn {
+  width: 100px;
+  height: 35px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 8px;
+  background-color: #7e7edf;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  &:hover {
+    background-color: #5d5ddd;
+    cursor: pointer;
+  }
+}
